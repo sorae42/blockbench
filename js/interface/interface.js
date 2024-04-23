@@ -668,7 +668,7 @@ function setProjectTitle(title) {
 	}
 	if (Project && !Project.saved) window_title = '● ' + window_title;
 	document.title = window_title;
-	document.getElementById('header_free_bar').innerText = window_title;
+	//document.getElementById('header_free_bar').innerText = window_title; // Better to show nothing than a non-middle title.
 }
 //Zoom
 function setZoomLevel(mode) {
